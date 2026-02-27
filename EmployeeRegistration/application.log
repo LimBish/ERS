@@ -1,16 +1,20 @@
-2026-02-19T13:59:24.422+05:45  INFO 32360 --- [EmployeeRegistration] [main] d.E.EmployeeRegistrationApplicationTests : Starting EmployeeRegistrationApplicationTests using Java 17.0.11 with PID 32360 (started by blimb in d:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
-2026-02-19T13:59:24.425+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] d.E.EmployeeRegistrationApplicationTests : Running with Spring Boot v4.0.1, Spring v7.0.2
-2026-02-19T13:59:24.427+05:45  INFO 32360 --- [EmployeeRegistration] [main] d.E.EmployeeRegistrationApplicationTests : No active profile set, falling back to 1 default profile: "default"
-2026-02-19T13:59:25.385+05:45  INFO 32360 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-19T13:59:25.485+05:45  INFO 32360 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
-2026-02-19T13:59:26.015+05:45  INFO 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-19T13:59:26.118+05:45  INFO 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-19T13:59:26.920+05:45  INFO 32360 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-19T13:59:26.959+05:45  INFO 32360 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-19T13:59:27.191+05:45  INFO 32360 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
-2026-02-19T13:59:27.193+05:45  INFO 32360 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-19T13:59:27.226+05:45  WARN 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-19T13:59:27.251+05:45  INFO 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-02-28T04:14:45.788+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 17.0.11 with PID 30184 (started by blimb in D:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
+2026-02-28T04:14:45.795+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-02-28T04:14:45.797+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T04:14:46.720+05:45  INFO 30184 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T04:14:46.799+05:45  INFO 30184 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2026-02-28T04:14:47.484+05:45  INFO 30184 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-02-28T04:14:47.502+05:45  INFO 30184 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T04:14:47.502+05:45  INFO 30184 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-28T04:14:47.581+05:45  INFO 30184 --- [EmployeeRegistration] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1746 ms
+2026-02-28T04:14:47.811+05:45  INFO 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-28T04:14:47.897+05:45  INFO 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-28T04:14:48.588+05:45  INFO 30184 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T04:14:48.642+05:45  INFO 30184 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T04:14:48.878+05:45  INFO 30184 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
+2026-02-28T04:14:48.881+05:45  INFO 30184 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T04:14:48.911+05:45  WARN 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28T04:14:48.939+05:45  INFO 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:mem:employeedb]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -22,8 +26,8 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-19T13:59:28.314+05:45  INFO 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-19T13:59:28.373+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:49.984+05:45  INFO 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T04:14:50.044+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     create table employees (
         id bigint generated by default as identity,
         contact_number varchar(255) not null,
@@ -32,7 +36,7 @@
         position varchar(255) not null,
         primary key (id)
     )
-2026-02-19T13:59:28.380+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:50.056+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     create table users (
         id bigint generated by default as identity,
         password varchar(255) not null,
@@ -40,24 +44,32 @@
         username varchar(255) not null,
         primary key (id)
     )
-2026-02-19T13:59:28.383+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:50.057+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists employees 
        drop constraint if exists UKj9xgmd0ya5jmus09o0b8pqrpb
-2026-02-19T13:59:28.384+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:50.058+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists employees 
        add constraint UKj9xgmd0ya5jmus09o0b8pqrpb unique (email)
-2026-02-19T13:59:28.387+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:50.061+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists users 
        drop constraint if exists UKr43af9ap4edm43mmtq01oddj6
-2026-02-19T13:59:28.388+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:50.062+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists users 
        add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username)
-2026-02-19T13:59:28.390+05:45  INFO 32360 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-19T13:59:28.505+05:45  INFO 32360 --- [EmployeeRegistration] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-19T13:59:28.909+05:45  WARN 32360 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-19T13:59:28.939+05:45  INFO 32360 --- [EmployeeRegistration] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
-2026-02-19T13:59:29.618+05:45  INFO 32360 --- [EmployeeRegistration] [main] d.E.EmployeeRegistrationApplicationTests : Started EmployeeRegistrationApplicationTests in 5.631 seconds (process running for 6.985)
-2026-02-19T13:59:30.284+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:50.064+05:45  INFO 30184 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:14:50.225+05:45  INFO 30184 --- [EmployeeRegistration] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-28T04:14:50.610+05:45  WARN 30184 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T04:14:50.742+05:45  WARN 30184 --- [EmployeeRegistration] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9cc0bf15-4c5b-4a16-bdbe-4900db17f370
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-28T04:14:50.751+05:45  INFO 30184 --- [EmployeeRegistration] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-28T04:14:51.002+05:45  INFO 30184 --- [EmployeeRegistration] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-02-28T04:14:51.347+05:45  INFO 30184 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 64476 (http) with context path '/'
+2026-02-28T04:14:51.355+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 5.934 seconds (process running for 7.521)
+2026-02-28T04:14:51.909+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.password,
@@ -67,43 +79,45 @@
         users u1_0 
     where
         u1_0.username=?
-2026-02-19T13:59:30.289+05:45 TRACE 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
-2026-02-19T13:59:30.377+05:45 DEBUG 32360 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:14:51.912+05:45 TRACE 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:14:51.976+05:45 DEBUG 30184 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (password, role, username, id) 
     values
         (?, ?, ?, default)
-2026-02-19T13:59:30.380+05:45 TRACE 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
-2026-02-19T13:59:30.380+05:45 TRACE 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
-2026-02-19T13:59:30.381+05:45 TRACE 32360 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
-2026-02-19T13:59:30.419+05:45  INFO 32360 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
-2026-02-19T13:59:30.421+05:45  INFO 32360 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
-2026-02-19T13:59:30.421+05:45  INFO 32360 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
-2026-02-19T13:59:30.421+05:45  INFO 32360 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
-2026-02-19T13:59:30.421+05:45  INFO 32360 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
-2026-02-19T13:59:30.421+05:45  INFO 32360 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
-2026-02-19T13:59:30.862+05:45  INFO 32360 --- [EmployeeRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-02-19T13:59:30.865+05:45  INFO 32360 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-02-19T13:59:30.868+05:45  INFO 32360 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-02-19T14:01:31.582+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.EmployeeRegistrationApplication    : Starting EmployeeRegistrationApplication using Java 17.0.11 with PID 11420 (D:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration\target\classes started by blimb in d:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
-2026-02-19T14:01:31.585+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] c.d.E.EmployeeRegistrationApplication    : Running with Spring Boot v4.0.1, Spring v7.0.2
-2026-02-19T14:01:31.587+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.EmployeeRegistrationApplication    : No active profile set, falling back to 1 default profile: "default"
-2026-02-19T14:01:32.103+05:45  INFO 11420 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-19T14:01:32.292+05:45  INFO 11420 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
-2026-02-19T14:01:32.705+05:45  INFO 11420 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-02-19T14:01:32.715+05:45  INFO 11420 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-19T14:01:32.716+05:45  INFO 11420 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-19T14:01:32.762+05:45  INFO 11420 --- [EmployeeRegistration] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1129 ms
-2026-02-19T14:01:32.880+05:45  INFO 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-19T14:01:32.924+05:45  INFO 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
-2026-02-19T14:01:33.279+05:45  INFO 11420 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-19T14:01:33.307+05:45  INFO 11420 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-19T14:01:33.449+05:45  INFO 11420 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
-2026-02-19T14:01:33.451+05:45  INFO 11420 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-19T14:01:33.469+05:45  WARN 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-19T14:01:33.490+05:45  INFO 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-02-28T04:14:51.979+05:45 TRACE 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
+2026-02-28T04:14:51.979+05:45 TRACE 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
+2026-02-28T04:14:51.980+05:45 TRACE 30184 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
+2026-02-28T04:14:52.006+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:14:52.006+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
+2026-02-28T04:14:52.006+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
+2026-02-28T04:14:52.006+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
+2026-02-28T04:14:52.006+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
+2026-02-28T04:14:52.006+05:45  INFO 30184 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:14:52.538+05:45  INFO 30184 --- [EmployeeRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T04:14:52.807+05:45  INFO 30184 --- [EmployeeRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-28T04:14:52.814+05:45  INFO 30184 --- [EmployeeRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:14:52.819+05:45  INFO 30184 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T04:14:52.822+05:45  INFO 30184 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-28T04:20:13.711+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 17.0.11 with PID 18760 (started by blimb in D:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
+2026-02-28T04:20:13.714+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-02-28T04:20:13.714+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T04:20:14.635+05:45  INFO 18760 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T04:20:14.720+05:45  INFO 18760 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2026-02-28T04:20:15.376+05:45  INFO 18760 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-02-28T04:20:15.388+05:45  INFO 18760 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T04:20:15.388+05:45  INFO 18760 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-28T04:20:15.447+05:45  INFO 18760 --- [EmployeeRegistration] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1703 ms
+2026-02-28T04:20:15.658+05:45  INFO 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-28T04:20:15.731+05:45  INFO 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-28T04:20:16.283+05:45  INFO 18760 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T04:20:16.336+05:45  INFO 18760 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T04:20:16.533+05:45  INFO 18760 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
+2026-02-28T04:20:16.534+05:45  INFO 18760 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T04:20:16.554+05:45  WARN 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28T04:20:16.581+05:45  INFO 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:mem:employeedb]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -115,8 +129,8 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-19T14:01:34.248+05:45  INFO 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-19T14:01:34.295+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:17.594+05:45  INFO 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T04:20:17.647+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     create table employees (
         id bigint generated by default as identity,
         contact_number varchar(255) not null,
@@ -125,7 +139,7 @@
         position varchar(255) not null,
         primary key (id)
     )
-2026-02-19T14:01:34.302+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:17.654+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     create table users (
         id bigint generated by default as identity,
         password varchar(255) not null,
@@ -133,25 +147,32 @@
         username varchar(255) not null,
         primary key (id)
     )
-2026-02-19T14:01:34.304+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:17.656+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists employees 
        drop constraint if exists UKj9xgmd0ya5jmus09o0b8pqrpb
-2026-02-19T14:01:34.305+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:17.658+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists employees 
        add constraint UKj9xgmd0ya5jmus09o0b8pqrpb unique (email)
-2026-02-19T14:01:34.308+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:17.659+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists users 
        drop constraint if exists UKr43af9ap4edm43mmtq01oddj6
-2026-02-19T14:01:34.308+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:17.660+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     alter table if exists users 
        add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username)
-2026-02-19T14:01:34.310+05:45  INFO 11420 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-19T14:01:34.379+05:45  INFO 11420 --- [EmployeeRegistration] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-19T14:01:34.555+05:45  WARN 11420 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-19T14:01:34.571+05:45  INFO 11420 --- [EmployeeRegistration] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
-2026-02-19T14:01:34.851+05:45  INFO 11420 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-02-19T14:01:34.856+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.EmployeeRegistrationApplication    : Started EmployeeRegistrationApplication in 3.641 seconds (process running for 3.962)
-2026-02-19T14:01:35.164+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:17.660+05:45  INFO 18760 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:20:17.757+05:45  INFO 18760 --- [EmployeeRegistration] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-28T04:20:18.056+05:45  WARN 18760 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T04:20:18.192+05:45  WARN 18760 --- [EmployeeRegistration] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d24ef8db-2133-4659-9e6e-b91a4cd072b7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-28T04:20:18.204+05:45  INFO 18760 --- [EmployeeRegistration] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-28T04:20:18.424+05:45  INFO 18760 --- [EmployeeRegistration] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-02-28T04:20:18.779+05:45  INFO 18760 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 56542 (http) with context path '/'
+2026-02-28T04:20:18.787+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 5.388 seconds (process running for 6.913)
+2026-02-28T04:20:19.905+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.password,
@@ -161,27 +182,100 @@
         users u1_0 
     where
         u1_0.username=?
-2026-02-19T14:01:35.167+05:45 TRACE 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
-2026-02-19T14:01:35.208+05:45 DEBUG 11420 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+2026-02-28T04:20:19.910+05:45 TRACE 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:20:20.036+05:45 DEBUG 18760 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     insert 
     into
         users
         (password, role, username, id) 
     values
         (?, ?, ?, default)
-2026-02-19T14:01:35.210+05:45 TRACE 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
-2026-02-19T14:01:35.210+05:45 TRACE 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
-2026-02-19T14:01:35.211+05:45 TRACE 11420 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
-2026-02-19T14:01:35.228+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
-2026-02-19T14:01:35.228+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
-2026-02-19T14:01:35.228+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
-2026-02-19T14:01:35.229+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
-2026-02-19T14:01:35.229+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
-2026-02-19T14:01:35.229+05:45  INFO 11420 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
-2026-02-19T14:05:31.801+05:45  INFO 11420 --- [EmployeeRegistration] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-19T14:05:31.801+05:45  INFO 11420 --- [EmployeeRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-19T14:05:31.804+05:45  INFO 11420 --- [EmployeeRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-02-19T14:05:31.843+05:45 DEBUG 11420 --- [EmployeeRegistration] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+2026-02-28T04:20:20.044+05:45 TRACE 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
+2026-02-28T04:20:20.047+05:45 TRACE 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
+2026-02-28T04:20:20.047+05:45 TRACE 18760 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
+2026-02-28T04:20:20.074+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:20:20.074+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
+2026-02-28T04:20:20.075+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
+2026-02-28T04:20:20.075+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
+2026-02-28T04:20:20.075+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
+2026-02-28T04:20:20.076+05:45  INFO 18760 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:20:20.631+05:45  INFO 18760 --- [EmployeeRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T04:20:20.840+05:45  INFO 18760 --- [EmployeeRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-28T04:20:20.844+05:45  INFO 18760 --- [EmployeeRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:20:20.845+05:45  INFO 18760 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T04:20:20.848+05:45  INFO 18760 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-28T04:20:40.166+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 17.0.11 with PID 18972 (started by blimb in D:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
+2026-02-28T04:20:40.168+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-02-28T04:20:40.170+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T04:20:41.009+05:45  INFO 18972 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T04:20:41.091+05:45  INFO 18972 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2026-02-28T04:20:41.742+05:45  INFO 18972 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-02-28T04:20:41.760+05:45  INFO 18972 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T04:20:41.762+05:45  INFO 18972 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-28T04:20:41.845+05:45  INFO 18972 --- [EmployeeRegistration] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1654 ms
+2026-02-28T04:20:42.045+05:45  INFO 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-28T04:20:42.131+05:45  INFO 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-28T04:20:42.781+05:45  INFO 18972 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T04:20:42.835+05:45  INFO 18972 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T04:20:43.047+05:45  INFO 18972 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
+2026-02-28T04:20:43.049+05:45  INFO 18972 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T04:20:43.071+05:45  WARN 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28T04:20:43.108+05:45  INFO 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:employeedb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: EMPLOYEEDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-28T04:20:44.160+05:45  INFO 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T04:20:44.213+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table employees (
+        id bigint generated by default as identity,
+        contact_number varchar(255) not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        position varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:20:44.220+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table users (
+        id bigint generated by default as identity,
+        password varchar(255) not null,
+        role varchar(255) not null,
+        username varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:20:44.222+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       drop constraint if exists UKj9xgmd0ya5jmus09o0b8pqrpb
+2026-02-28T04:20:44.222+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       add constraint UKj9xgmd0ya5jmus09o0b8pqrpb unique (email)
+2026-02-28T04:20:44.224+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       drop constraint if exists UKr43af9ap4edm43mmtq01oddj6
+2026-02-28T04:20:44.225+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username)
+2026-02-28T04:20:44.227+05:45  INFO 18972 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:20:44.303+05:45  INFO 18972 --- [EmployeeRegistration] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-28T04:20:44.611+05:45  WARN 18972 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T04:20:44.755+05:45  WARN 18972 --- [EmployeeRegistration] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b65c6693-5438-41ba-bb85-e218094aba45
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-28T04:20:44.764+05:45  INFO 18972 --- [EmployeeRegistration] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-28T04:20:44.993+05:45  INFO 18972 --- [EmployeeRegistration] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-02-28T04:20:45.321+05:45  INFO 18972 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 64789 (http) with context path '/'
+2026-02-28T04:20:45.328+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 5.478 seconds (process running for 6.978)
+2026-02-28T04:20:45.742+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.password,
@@ -191,8 +285,100 @@
         users u1_0 
     where
         u1_0.username=?
-2026-02-19T14:05:31.844+05:45 TRACE 11420 --- [EmployeeRegistration] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
-2026-02-19T14:05:47.993+05:45 DEBUG 11420 --- [EmployeeRegistration] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+2026-02-28T04:20:45.744+05:45 TRACE 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:20:45.792+05:45 DEBUG 18972 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+2026-02-28T04:20:45.795+05:45 TRACE 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
+2026-02-28T04:20:45.795+05:45 TRACE 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
+2026-02-28T04:20:45.795+05:45 TRACE 18972 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
+2026-02-28T04:20:45.814+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:20:45.815+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
+2026-02-28T04:20:45.815+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
+2026-02-28T04:20:45.815+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
+2026-02-28T04:20:45.815+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
+2026-02-28T04:20:45.815+05:45  INFO 18972 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:20:46.284+05:45  INFO 18972 --- [EmployeeRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T04:20:46.457+05:45  INFO 18972 --- [EmployeeRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-28T04:20:46.461+05:45  INFO 18972 --- [EmployeeRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:20:46.463+05:45  INFO 18972 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T04:20:46.466+05:45  INFO 18972 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-28T04:24:59.110+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 17.0.11 with PID 32192 (started by blimb in D:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
+2026-02-28T04:24:59.111+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-02-28T04:24:59.113+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T04:25:00.011+05:45  INFO 32192 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T04:25:00.100+05:45  INFO 32192 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2026-02-28T04:25:00.790+05:45  INFO 32192 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-02-28T04:25:00.802+05:45  INFO 32192 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T04:25:00.803+05:45  INFO 32192 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-28T04:25:00.880+05:45  INFO 32192 --- [EmployeeRegistration] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1742 ms
+2026-02-28T04:25:01.113+05:45  INFO 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-28T04:25:01.224+05:45  INFO 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-28T04:25:01.823+05:45  INFO 32192 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T04:25:01.866+05:45  INFO 32192 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T04:25:02.037+05:45  INFO 32192 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
+2026-02-28T04:25:02.039+05:45  INFO 32192 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T04:25:02.058+05:45  WARN 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28T04:25:02.079+05:45  INFO 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:employeedb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: EMPLOYEEDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-28T04:25:03.039+05:45  INFO 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T04:25:03.092+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table employees (
+        id bigint generated by default as identity,
+        contact_number varchar(255) not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        position varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:25:03.099+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table users (
+        id bigint generated by default as identity,
+        password varchar(255) not null,
+        role varchar(255) not null,
+        username varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:25:03.101+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       drop constraint if exists UKj9xgmd0ya5jmus09o0b8pqrpb
+2026-02-28T04:25:03.101+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       add constraint UKj9xgmd0ya5jmus09o0b8pqrpb unique (email)
+2026-02-28T04:25:03.103+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       drop constraint if exists UKr43af9ap4edm43mmtq01oddj6
+2026-02-28T04:25:03.103+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username)
+2026-02-28T04:25:03.104+05:45  INFO 32192 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:25:03.185+05:45  INFO 32192 --- [EmployeeRegistration] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-28T04:25:03.485+05:45  WARN 32192 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T04:25:03.606+05:45  WARN 32192 --- [EmployeeRegistration] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2ef77e7d-a623-4656-94d2-9e5c575fe9a7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-28T04:25:03.617+05:45  INFO 32192 --- [EmployeeRegistration] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-28T04:25:03.825+05:45  INFO 32192 --- [EmployeeRegistration] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-02-28T04:25:04.172+05:45  INFO 32192 --- [EmployeeRegistration] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 59003 (http) with context path '/'
+2026-02-28T04:25:04.178+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 5.395 seconds (process running for 6.812)
+2026-02-28T04:25:04.656+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.password,
@@ -202,8 +388,98 @@
         users u1_0 
     where
         u1_0.username=?
-2026-02-19T14:05:47.993+05:45 TRACE 11420 --- [EmployeeRegistration] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
-2026-02-19T14:06:03.289+05:45 DEBUG 11420 --- [EmployeeRegistration] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+2026-02-28T04:25:04.658+05:45 TRACE 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:25:04.702+05:45 DEBUG 32192 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+2026-02-28T04:25:04.704+05:45 TRACE 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
+2026-02-28T04:25:04.705+05:45 TRACE 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
+2026-02-28T04:25:04.705+05:45 TRACE 32192 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
+2026-02-28T04:25:04.725+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:25:04.725+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
+2026-02-28T04:25:04.725+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
+2026-02-28T04:25:04.725+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
+2026-02-28T04:25:04.725+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
+2026-02-28T04:25:04.725+05:45  INFO 32192 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:25:05.257+05:45  INFO 32192 --- [EmployeeRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T04:25:05.466+05:45  INFO 32192 --- [EmployeeRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-28T04:25:05.469+05:45  INFO 32192 --- [EmployeeRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:25:05.472+05:45  INFO 32192 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T04:25:05.473+05:45  INFO 32192 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-28T04:27:03.611+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 17.0.11 with PID 3104 (started by blimb in D:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
+2026-02-28T04:27:03.613+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-28T04:27:03.615+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T04:27:04.974+05:45  INFO 3104 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T04:27:05.129+05:45  INFO 3104 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 2 JPA repository interfaces.
+2026-02-28T04:27:06.624+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-02-28T04:27:06.651+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T04:27:06.652+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-28T04:27:06.781+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-28T04:27:06.782+05:45  INFO 3104 --- [EmployeeRegistration] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3104 ms
+2026-02-28T04:27:07.164+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-28T04:27:07.298+05:45  INFO 3104 --- [EmployeeRegistration] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-02-28T04:27:07.381+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-28T04:27:08.143+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T04:27:08.223+05:45  INFO 3104 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T04:27:08.515+05:45  INFO 3104 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
+2026-02-28T04:27:08.519+05:45  INFO 3104 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T04:27:08.557+05:45  WARN 3104 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28T04:27:08.600+05:45  INFO 3104 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-28T04:27:10.260+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T04:27:10.356+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table employees (
+        id bigint generated by default as identity,
+        contact_number varchar(255) not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        position varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:27:10.369+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table users (
+        id bigint generated by default as identity,
+        password varchar(255) not null,
+        role varchar(255) not null,
+        username varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:27:10.374+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       drop constraint if exists UKj9xgmd0ya5jmus09o0b8pqrpb
+2026-02-28T04:27:10.375+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       add constraint UKj9xgmd0ya5jmus09o0b8pqrpb unique (email)
+2026-02-28T04:27:10.379+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       drop constraint if exists UKr43af9ap4edm43mmtq01oddj6
+2026-02-28T04:27:10.380+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username)
+2026-02-28T04:27:10.383+05:45  INFO 3104 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:27:11.371+05:45  WARN 3104 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T04:27:11.405+05:45  WARN 3104 --- [EmployeeRegistration] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4e036a6c-04d8-4f6a-ac49-fb5f8af9f373
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-28T04:27:11.446+05:45  INFO 3104 --- [EmployeeRegistration] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-28T04:27:11.584+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-02-28T04:27:12.364+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:employeedb'
+2026-02-28T04:27:12.754+05:45  INFO 3104 --- [EmployeeRegistration] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 49566 (http) with context path '/'
+2026-02-28T04:27:12.774+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 9.901 seconds (process running for 12.36)
+2026-02-28T04:27:13.016+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
     select
         u1_0.id,
         u1_0.password,
@@ -213,16 +489,198 @@
         users u1_0 
     where
         u1_0.username=?
-2026-02-19T14:06:03.290+05:45 TRACE 11420 --- [EmployeeRegistration] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
-2026-02-19T14:06:03.607+05:45 DEBUG 11420 --- [EmployeeRegistration] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+2026-02-28T04:27:13.022+05:45 TRACE 3104 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:27:13.141+05:45 DEBUG 3104 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+2026-02-28T04:27:13.147+05:45 TRACE 3104 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
+2026-02-28T04:27:13.148+05:45 TRACE 3104 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
+2026-02-28T04:27:13.149+05:45 TRACE 3104 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
+2026-02-28T04:27:13.191+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:27:13.192+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
+2026-02-28T04:27:13.192+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
+2026-02-28T04:27:13.193+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
+2026-02-28T04:27:13.193+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
+2026-02-28T04:27:13.194+05:45  INFO 3104 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:27:14.451+05:45  INFO 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-28T04:27:14.452+05:45  INFO 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-28T04:27:14.455+05:45  INFO 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-02-28T04:27:14.612+05:45 DEBUG 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-02-28T04:27:14.613+05:45 TRACE 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:27:15.167+05:45 DEBUG 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-4] org.hibernate.SQL                        : 
     insert 
     into
         employees
         (contact_number, email, name, position, id) 
     values
         (?, ?, ?, ?, default)
-2026-02-19T14:06:03.608+05:45 TRACE 11420 --- [EmployeeRegistration] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [1234567890]
-2026-02-19T14:06:03.608+05:45 TRACE 11420 --- [EmployeeRegistration] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [john@test.com]
-2026-02-19T14:06:03.608+05:45 TRACE 11420 --- [EmployeeRegistration] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [John Doe]
-2026-02-19T14:06:03.608+05:45 TRACE 11420 --- [EmployeeRegistration] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [Developer]
-2026-02-19T14:06:03.609+05:45  INFO 11420 --- [EmployeeRegistration] [http-nio-8080-exec-4] c.d.E.service.EmployeeServiceImpl        : Employee registered successfully: id=1, email=john@test.com
+2026-02-28T04:27:15.168+05:45 TRACE 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [9801234567]
+2026-02-28T04:27:15.168+05:45 TRACE 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [alice.smith@example.com]
+2026-02-28T04:27:15.171+05:45 TRACE 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [Alice Smith]
+2026-02-28T04:27:15.172+05:45 TRACE 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [Software Engineer]
+2026-02-28T04:27:15.173+05:45  INFO 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-4] c.d.E.service.EmployeeServiceImpl        : Employee registered successfully: id=1, email=alice.smith@example.com
+2026-02-28T04:27:15.201+05:45  INFO 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-7] c.d.E.service.EmployeeServiceImpl        : Fetching all employees
+2026-02-28T04:27:15.215+05:45 DEBUG 3104 --- [EmployeeRegistration] [http-nio-auto-1-exec-7] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.contact_number,
+        e1_0.email,
+        e1_0.name,
+        e1_0.position 
+    from
+        employees e1_0
+2026-02-28T04:27:15.390+05:45  INFO 3104 --- [EmployeeRegistration] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T04:27:15.784+05:45  INFO 3104 --- [EmployeeRegistration] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-02-28T04:27:15.790+05:45  INFO 3104 --- [EmployeeRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:27:15.793+05:45  INFO 3104 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T04:27:15.795+05:45  INFO 3104 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-28T04:27:49.295+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Starting CucumberSpringConfiguration using Java 17.0.11 with PID 32592 (started by blimb in D:\WestCliff University\6th Trimester\EmployeeRegistration\EmployeeRegistration)
+2026-02-28T04:27:49.295+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-28T04:27:49.297+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T04:27:50.193+05:45  INFO 32592 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T04:27:50.290+05:45  INFO 32592 --- [EmployeeRegistration] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2026-02-28T04:27:51.277+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-02-28T04:27:51.296+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T04:27:51.297+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-28T04:27:51.403+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-28T04:27:51.404+05:45  INFO 32592 --- [EmployeeRegistration] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2079 ms
+2026-02-28T04:27:51.611+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-28T04:27:51.702+05:45  INFO 32592 --- [EmployeeRegistration] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-02-28T04:27:51.753+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-28T04:27:52.117+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T04:27:52.163+05:45  INFO 32592 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T04:27:52.398+05:45  INFO 32592 --- [EmployeeRegistration] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:employeedb user=SA
+2026-02-28T04:27:52.402+05:45  INFO 32592 --- [EmployeeRegistration] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T04:27:52.455+05:45  WARN 32592 --- [EmployeeRegistration] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28T04:27:52.493+05:45  INFO 32592 --- [EmployeeRegistration] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-28T04:27:53.447+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T04:27:53.505+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table employees (
+        id bigint generated by default as identity,
+        contact_number varchar(255) not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        position varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:27:53.517+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    create table users (
+        id bigint generated by default as identity,
+        password varchar(255) not null,
+        role varchar(255) not null,
+        username varchar(255) not null,
+        primary key (id)
+    )
+2026-02-28T04:27:53.519+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       drop constraint if exists UKj9xgmd0ya5jmus09o0b8pqrpb
+2026-02-28T04:27:53.520+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists employees 
+       add constraint UKj9xgmd0ya5jmus09o0b8pqrpb unique (email)
+2026-02-28T04:27:53.524+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       drop constraint if exists UKr43af9ap4edm43mmtq01oddj6
+2026-02-28T04:27:53.525+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    alter table if exists users 
+       add constraint UKr43af9ap4edm43mmtq01oddj6 unique (username)
+2026-02-28T04:27:53.526+05:45  INFO 32592 --- [EmployeeRegistration] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:27:53.966+05:45  WARN 32592 --- [EmployeeRegistration] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T04:27:53.989+05:45  WARN 32592 --- [EmployeeRegistration] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1245418b-a627-42f0-bf22-e6b86f964b88
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-28T04:27:54.016+05:45  INFO 32592 --- [EmployeeRegistration] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-28T04:27:54.116+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-02-28T04:27:54.667+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:employeedb'
+2026-02-28T04:27:54.992+05:45  INFO 32592 --- [EmployeeRegistration] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 60682 (http) with context path '/'
+2026-02-28T04:27:55.004+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.c.CucumberSpringConfiguration      : Started CucumberSpringConfiguration in 6.055 seconds (process running for 7.93)
+2026-02-28T04:27:55.175+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-02-28T04:27:55.178+05:45 TRACE 32592 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:27:55.248+05:45 DEBUG 32592 --- [EmployeeRegistration] [main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+2026-02-28T04:27:55.252+05:45 TRACE 32592 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [password123]
+2026-02-28T04:27:55.252+05:45 TRACE 32592 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [USER]
+2026-02-28T04:27:55.252+05:45 TRACE 32592 --- [EmployeeRegistration] [main] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [admin]
+2026-02-28T04:27:55.277+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:27:55.277+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : TEST USER CREATED FOR WEEK 4 LAB
+2026-02-28T04:27:55.277+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Username: admin
+2026-02-28T04:27:55.277+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Password: password123
+2026-02-28T04:27:55.277+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : Use these credentials to test JWT authentication
+2026-02-28T04:27:55.278+05:45  INFO 32592 --- [EmployeeRegistration] [main] c.d.E.config.DataInitializer             : ================================================
+2026-02-28T04:27:55.973+05:45  INFO 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-28T04:27:55.981+05:45  INFO 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-28T04:27:55.983+05:45  INFO 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-28T04:27:56.055+05:45 DEBUG 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-02-28T04:27:56.055+05:45 TRACE 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin]
+2026-02-28T04:27:56.136+05:45 DEBUG 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        employees
+        (contact_number, email, name, position, id) 
+    values
+        (?, ?, ?, ?, default)
+2026-02-28T04:27:56.136+05:45 TRACE 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [9801234567]
+2026-02-28T04:27:56.137+05:45 TRACE 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [alice.smith@example.com]
+2026-02-28T04:27:56.137+05:45 TRACE 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [Alice Smith]
+2026-02-28T04:27:56.137+05:45 TRACE 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [Software Engineer]
+2026-02-28T04:27:56.138+05:45  INFO 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-2] c.d.E.service.EmployeeServiceImpl        : Employee registered successfully: id=1, email=alice.smith@example.com
+2026-02-28T04:27:56.152+05:45  INFO 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-3] c.d.E.service.EmployeeServiceImpl        : Fetching all employees
+2026-02-28T04:27:56.163+05:45 DEBUG 32592 --- [EmployeeRegistration] [http-nio-auto-1-exec-3] org.hibernate.SQL                        : 
+    select
+        e1_0.id,
+        e1_0.contact_number,
+        e1_0.email,
+        e1_0.name,
+        e1_0.position 
+    from
+        employees e1_0
+2026-02-28T04:27:56.231+05:45  INFO 32592 --- [EmployeeRegistration] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T04:27:56.408+05:45  INFO 32592 --- [EmployeeRegistration] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-02-28T04:27:56.411+05:45  INFO 32592 --- [EmployeeRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T04:27:56.413+05:45  INFO 32592 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T04:27:56.416+05:45  INFO 32592 --- [EmployeeRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

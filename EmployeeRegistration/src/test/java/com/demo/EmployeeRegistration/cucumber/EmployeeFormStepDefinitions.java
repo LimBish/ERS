@@ -51,15 +51,13 @@ public class EmployeeFormStepDefinitions {
         saveResponse = restTemplate.postForEntity(url("/employee/save"), request, Map.class);
     }
 
-
     @When("the client submits predefined employee form data {string}, {string}, {string}, {string}")
     public void submitPredefinedData(String name, String email, String contactNumber, String position) {
         employeeForm = Map.of(
                 "name", name,
                 "email", email,
                 "contactNumber", contactNumber,
-                "position", position
-        );
+                "position", position);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
@@ -80,7 +78,8 @@ public class EmployeeFormStepDefinitions {
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth(token);
         HttpEntity<Void> request = new HttpEntity<>(headers);
-        ResponseEntity<Map[]> response = restTemplate.exchange(url("/employee/all"), HttpMethod.GET, request, Map[].class);
+        ResponseEntity<Map[]> response = restTemplate.exchange(url("/employee/all"), HttpMethod.GET, request,
+                Map[].class);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).isNotNull();

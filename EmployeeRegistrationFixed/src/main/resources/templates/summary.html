@@ -1,0 +1,187 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Registration Summary</title>-->
+<!--    <link rel="stylesheet" th:href="@{/css/summary.css}">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <h2>Registration Successful</h2>-->
+<!--    <div class="summary-details">-->
+<!--        <div class="detail-item">-->
+<!--            <span class="label">Name</span>-->
+<!--            <span class="value" th:text="${employee.name}">Name Placeholder</span>-->
+<!--        </div>-->
+<!--        <div class="detail-item">-->
+<!--            <span class="label">Email</span>-->
+<!--            <span class="value" th:text="${employee.email}">Email Placeholder</span>-->
+<!--        </div>-->
+<!--        <div class="detail-item">-->
+<!--            <span class="label">Contact Number</span>-->
+<!--            <span class="value" th:text="${employee.contactNumber}">Contact Placeholder</span>-->
+<!--        </div>-->
+<!--        <div class="detail-item">-->
+<!--            <span class="label">Position</span>-->
+<!--            <span class="value" th:text="${employee.position}">Position Placeholder</span>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <a href="/" class="btn-back">Register Another Employee</a>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Summary</title>
+    <link rel="stylesheet" th:href="@{/css/summary.css}">
+    <style>
+        .jwt-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+        .jwt-info h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .jwt-detail {
+            margin-bottom: 10px;
+        }
+        .jwt-label {
+            font-weight: 600;
+            color: #666;
+            display: inline-block;
+            width: 150px;
+        }
+        .jwt-value {
+            color: #333;
+        }
+        .token-preview {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            word-break: break-all;
+            margin-top: 5px;
+            max-height: 80px;
+            overflow-y: auto;
+        }
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn-secondary {
+            flex: 1;
+            background: #95a5a6;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-weight: 600;
+        }
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Registration Successful</h2>
+    <div class="summary-details">
+        <div class="detail-item">
+            <span class="label">Name</span>
+            <span class="value" th:text="${employee.name}">Name Placeholder</span>
+        </div>
+        <div class="detail-item">
+            <span class="label">Email</span>
+            <span class="value" th:text="${employee.email}">Email Placeholder</span>
+        </div>
+        <div class="detail-item">
+            <span class="label">Contact Number</span>
+            <span class="value" th:text="${employee.contactNumber}">Contact Placeholder</span>
+        </div>
+        <div class="detail-item">
+            <span class="label">Position</span>
+            <span class="value" th:text="${employee.position}">Position Placeholder</span>
+        </div>
+    </div>
+
+    <div class="jwt-info">
+        <h3>🔐 JWT Authentication Info (Week 4 Lab)</h3>
+        <div class="jwt-detail">
+            <span class="jwt-label">Authenticated User:</span>
+            <span class="jwt-value" id="authUser">Loading...</span>
+        </div>
+        <div class="jwt-detail">
+            <span class="jwt-label">Token Status:</span>
+            <span class="jwt-value" id="tokenStatus">Loading...</span>
+        </div>
+        <div class="jwt-detail">
+            <span class="jwt-label">Token Preview:</span>
+            <div class="token-preview" id="tokenPreview">Loading...</div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <a href="/" class="btn-back">Register Another Employee</a>
+        <button onclick="logout()" class="btn-secondary">Logout</button>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        const token = localStorage.getItem('jwtToken');
+        const username = localStorage.getItem('username');
+        const expiresAt = localStorage.getItem('tokenExpiresAt');
+
+        if (token && username) {
+            document.getElementById('authUser').textContent = username;
+            document.getElementById('tokenPreview').textContent = token.substring(0, 60) + '...';
+
+            const now = new Date().getTime();
+            if (expiresAt && now < parseInt(expiresAt)) {
+                const remaining = parseInt(expiresAt) - now;
+                const hours = Math.floor(remaining / (1000 * 60 * 60));
+                const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+
+                const statusEl = document.getElementById('tokenStatus');
+                statusEl.textContent = '✅ Valid (Expires in ' + hours + 'h ' + minutes + 'm)';
+                statusEl.style.color = '#27ae60';
+            } else {
+                const statusEl = document.getElementById('tokenStatus');
+                statusEl.textContent = '❌ Expired';
+                statusEl.style.color = '#e74c3c';
+            }
+        } else {
+            document.getElementById('authUser').textContent = 'Not authenticated';
+            document.getElementById('tokenPreview').textContent = 'No token found';
+
+            const statusEl = document.getElementById('tokenStatus');
+            statusEl.textContent = '❌ Not logged in';
+            statusEl.style.color = '#e74c3c';
+        }
+    });
+
+    function logout() {
+        localStorage.removeItem('jwtToken');
+        localStorage.removeItem('username');
+        localStorage.removeItem('tokenExpiresAt');
+        window.location.href = '/';
+    }
+</script>
+</body>
+</html>

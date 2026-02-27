@@ -1,0 +1,420 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Employee Registration</title>-->
+<!--    <link rel="stylesheet" th:href="@{/css/style.css}">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <h2>Registration Form</h2>-->
+<!--    <form th:action="@{/register}" th:object="${employee}" method="post">-->
+<!--        <div class="form-group">-->
+<!--            <label for="name">Name</label>-->
+<!--            <input type="text" id="name" th:field="*{name}" name="name" placeholder="John Doe" required />-->
+<!--            <span class="error" id="name-error" style="color:red; font-size:0.9rem;"></span>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="email">Email</label>-->
+<!--            <input type="email" id="email" th:field="*{email}" name="email" placeholder="john@example.com" required />-->
+<!--            <span class="error" id="email-error" style="color:red; font-size:0.9rem;"></span>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="contactNumber">Contact Number</label>-->
+<!--            <input type="tel" id="contactNumber" th:field="*{contactNumber}" name="contactNumber" placeholder="9800000000" required />-->
+<!--            <span class="error" id="contactNumber-error" style="color:red; font-size:0.9rem;"></span>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="position">Position</label>-->
+<!--            <input type="text" id="position" th:field="*{position}" name="position" placeholder="Software Engineer" required />-->
+<!--            <span class="error" id="position-error" style="color:red; font-size:0.9rem;"></span>-->
+<!--        </div>-->
+<!--        <button type="submit">Submit Registration</button>-->
+<!--    </form>-->
+<!--</div>-->
+<!--<script>-->
+<!--    document.querySelector('form').addEventListener('submit', async function(e) {-->
+<!--        e.preventDefault();-->
+<!--        // Clear previous errors and borders-->
+<!--        document.querySelectorAll('.error').forEach(el => el.textContent = '');-->
+<!--        document.querySelectorAll('input').forEach(input => input.style.borderColor = '');-->
+
+<!--        const formData = new FormData(this);-->
+<!--        const data = Object.fromEntries(formData.entries());-->
+
+<!--        try {-->
+<!--            const response = await fetch('/api/register', {-->
+<!--                method: 'POST',-->
+<!--                headers: { 'Content-Type': 'application/json' },-->
+<!--                body: JSON.stringify(data)-->
+<!--            });-->
+
+<!--            if (response.ok) {-->
+<!--                const result = await response.json();-->
+<!--                if (result.redirectUrl) {-->
+<!--                    window.location.href = '/' + result.redirectUrl;  // e.g., /summary-->
+<!--                } else {-->
+<!--                    alert('Success but no redirect URL received.');-->
+<!--                }-->
+<!--            } else {-->
+<!--                const errors = await response.json();-->
+<!--                for (const [field, msg] of Object.entries(errors)) {-->
+<!--                    const errorEl = document.getElementById(`${field}-error`);-->
+<!--                    if (errorEl) {-->
+<!--                        errorEl.textContent = msg;-->
+<!--                    }-->
+<!--                    const input = document.querySelector(`[name="${field}"]`);-->
+<!--                    if (input) {-->
+<!--                        input.style.borderColor = 'red';-->
+<!--                    }-->
+<!--                }-->
+<!--            }-->
+<!--        } catch (error) {-->
+<!--            alert('An unexpected error occurred: ' + error.message);-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration - JWT Auth</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        .hidden { display: none; }
+        .alert {
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            display: none;
+        }
+        .alert.show { display: block; }
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .alert-error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .auth-status {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logout-btn {
+            background: #e74c3c;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .test-credentials {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .spinner {
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #3498db;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="auth-container">
+    <div id="authStatus" class="auth-status hidden">
+        <p><strong>Logged in as:</strong> <span id="loggedInUser"></span></p>
+        <p><small>Token expires in: <span id="tokenExpiry"></span></small></p>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+
+    <div id="loginCard" class="container">
+        <h2>🔐 Login</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 20px;">Week 4 Lab - JWT Authentication</p>
+
+        <div id="loginAlert" class="alert"></div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" name="username" placeholder="Enter username" required />
+                <span class="error" id="loginUsername-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" placeholder="Enter password" required />
+                <span class="error" id="loginPassword-error"></span>
+            </div>
+            <button type="submit" id="loginBtn">Login & Get JWT Token</button>
+        </form>
+
+        <div class="test-credentials">
+            <strong>Test Credentials:</strong> admin / password123
+        </div>
+    </div>
+
+    <div id="registrationCard" class="container hidden">
+        <h2>Employee Registration</h2>
+
+        <div id="registrationAlert" class="alert"></div>
+
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+                <span class="error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="9800000000" required />
+                <span class="error" id="contactNumber-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="position">Position</label>
+                <input type="text" id="position" name="position" placeholder="Software Engineer" required />
+                <span class="error" id="position-error"></span>
+            </div>
+            <button type="submit" id="registerBtn">Submit Registration</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        checkAuthStatus();
+    });
+
+    function checkAuthStatus() {
+        const token = localStorage.getItem('jwtToken');
+        const username = localStorage.getItem('username');
+        const expiresAt = localStorage.getItem('tokenExpiresAt');
+
+        if (token && username && expiresAt) {
+            const now = new Date().getTime();
+            if (now < parseInt(expiresAt)) {
+                showRegistrationForm();
+                updateAuthStatus(username, expiresAt);
+            } else {
+                clearAuthData();
+                showAlert('loginAlert', 'Your session has expired. Please login again.', 'error');
+            }
+        } else {
+            showLoginForm();
+        }
+    }
+
+    function updateAuthStatus(username, expiresAt) {
+        document.getElementById('loggedInUser').textContent = username;
+        const now = new Date().getTime();
+        const remaining = parseInt(expiresAt) - now;
+        const hours = Math.floor(remaining / (1000 * 60 * 60));
+        const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+        document.getElementById('tokenExpiry').textContent = hours + 'h ' + minutes + 'm';
+        document.getElementById('authStatus').classList.remove('hidden');
+    }
+
+    function showLoginForm() {
+        document.getElementById('loginCard').classList.remove('hidden');
+        document.getElementById('registrationCard').classList.add('hidden');
+        document.getElementById('authStatus').classList.add('hidden');
+    }
+
+    function showRegistrationForm() {
+        document.getElementById('loginCard').classList.add('hidden');
+        document.getElementById('registrationCard').classList.remove('hidden');
+    }
+
+    function clearAuthData() {
+        localStorage.removeItem('jwtToken');
+        localStorage.removeItem('username');
+        localStorage.removeItem('tokenExpiresAt');
+    }
+
+    function logout() {
+        clearAuthData();
+        showLoginForm();
+        showAlert('loginAlert', 'Logged out successfully', 'success');
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const username = document.getElementById('loginUsername').value.trim();
+        const password = document.getElementById('loginPassword').value.trim();
+
+        clearErrors('login');
+
+        if (!username || !password) {
+            showAlert('loginAlert', 'Username and password are required', 'error');
+            return;
+        }
+
+        const loginBtn = document.getElementById('loginBtn');
+        loginBtn.disabled = true;
+        loginBtn.innerHTML = '<span class="spinner"></span>Logging in...';
+
+        try {
+            const response = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: username, password: password })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                const token = data.token;
+                const expiresIn = data.expiresIn;
+                const expiresAt = new Date().getTime() + expiresIn;
+
+                localStorage.setItem('jwtToken', token);
+                localStorage.setItem('username', username);
+                localStorage.setItem('tokenExpiresAt', expiresAt);
+
+                showAlert('loginAlert', 'Login successful! JWT token received.', 'success');
+
+                setTimeout(() => {
+                    showRegistrationForm();
+                    updateAuthStatus(username, expiresAt);
+                }, 1000);
+
+            } else {
+                showAlert('loginAlert', data.error || 'Invalid username or password', 'error');
+            }
+
+        } catch (error) {
+            console.error('Login error:', error);
+            showAlert('loginAlert', 'Network error. Please try again.', 'error');
+        } finally {
+            loginBtn.disabled = false;
+            loginBtn.innerHTML = 'Login & Get JWT Token';
+        }
+    });
+
+    document.getElementById('registrationForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const token = localStorage.getItem('jwtToken');
+
+        if (!token) {
+            showAlert('registrationAlert', 'No JWT token found. Please login first.', 'error');
+            showLoginForm();
+            return;
+        }
+
+        document.querySelectorAll('.error').forEach(el => el.textContent = '');
+        document.querySelectorAll('input').forEach(input => input.style.borderColor = '');
+
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData.entries());
+
+        const registerBtn = document.getElementById('registerBtn');
+        registerBtn.disabled = true;
+        registerBtn.innerHTML = '<span class="spinner"></span>Registering...';
+
+        try {
+            const response = await fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + token
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                showAlert('registrationAlert', 'Employee registered successfully!', 'success');
+                document.getElementById('registrationForm').reset();
+
+                if (result.redirectUrl) {
+                    setTimeout(() => {
+                        window.location.href = '/' + result.redirectUrl;
+                    }, 1500);
+                }
+            } else if (response.status === 401) {
+                const errorData = await response.json();
+
+                if (errorData.error.includes('expired')) {
+                    showAlert('registrationAlert', 'JWT token expired. Please login again.', 'error');
+                } else if (errorData.error.includes('incorrect') || errorData.error.includes('invalid')) {
+                    showAlert('registrationAlert', 'JWT token is incorrect. Please login again.', 'error');
+                } else {
+                    showAlert('registrationAlert', errorData.error, 'error');
+                }
+
+                setTimeout(() => {
+                    clearAuthData();
+                    showLoginForm();
+                }, 2000);
+
+            } else {
+                const errors = await response.json();
+                showAlert('registrationAlert', 'Please fix the errors below', 'error');
+
+                for (const [field, msg] of Object.entries(errors)) {
+                    const errorEl = document.getElementById(`${field}-error`);
+                    if (errorEl) errorEl.textContent = msg;
+                    const input = document.querySelector(`[name="${field}"]`);
+                    if (input) input.style.borderColor = 'red';
+                }
+            }
+        } catch (error) {
+            console.error('Registration error:', error);
+            showAlert('registrationAlert', 'An unexpected error occurred: ' + error.message, 'error');
+        } finally {
+            registerBtn.disabled = false;
+            registerBtn.innerHTML = 'Submit Registration';
+        }
+    });
+
+    function showAlert(alertId, message, type) {
+        const alert = document.getElementById(alertId);
+        alert.textContent = message;
+        alert.className = 'alert alert-' + type + ' show';
+        setTimeout(() => alert.classList.remove('show'), 5000);
+    }
+
+    function clearErrors(formType) {
+        if (formType === 'login') {
+            document.getElementById('loginUsername-error').textContent = '';
+            document.getElementById('loginPassword-error').textContent = '';
+        }
+    }
+</script>
+</body>
+</html>

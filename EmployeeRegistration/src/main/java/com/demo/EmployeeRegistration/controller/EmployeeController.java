@@ -2,6 +2,7 @@ package com.demo.EmployeeRegistration.controller;
 
 import com.demo.EmployeeRegistration.dto.EmployeeDTO;
 import com.demo.EmployeeRegistration.service.EmployeeService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -43,7 +44,7 @@ public class    EmployeeController {
      */
     @PostMapping("/save")
     public ResponseEntity<Map<String, String>> saveEmployee(
-            @RequestBody EmployeeDTO employeeDTO) {
+          @Valid @RequestBody EmployeeDTO employeeDTO) {
 
         // Build DTO from form params
 
